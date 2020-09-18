@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a7a97c88b13d46be92cfb8895484f85, type: 3}
+  m_Name: UISettings
+  m_EditorClassIdentifier: 
+  _packPrefab: {fileID: 114949033165923880, guid: 455402099ef494ed689de2ae7b853247,
+    type: 3}
+  _viewsToRegister:
+  - {fileID: 8586696592744223939, guid: 8af859f85fa2c814e9b1aab129efcdd4, type: 3}
+  - {fileID: 5471603883285459774, guid: 6e4fd31e9d743f94cb9d5e207ad5bb9b, type: 3}
+  - {fileID: 7065162339820719489, guid: 16a1a36933abe4048b96509ce5906097, type: 3}
+  - {fileID: 947491361468814831, guid: 6da992f5c69a78f4e87bd941e2bb5830, type: 3}
+  - {fileID: 4606479816128228476, guid: 8d1404b9dce1129459bc8f24952114e8, type: 3}
+  _deactivateViewGOs: 0
