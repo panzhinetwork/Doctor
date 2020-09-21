@@ -1027,11 +1027,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: UIVideo
       objectReference: {fileID: 0}
-    - target: {fileID: 7065162339820719489, guid: 16a1a36933abe4048b96509ce5906097,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7065162340236608307, guid: 16a1a36933abe4048b96509ce5906097,
         type: 3}
       propertyPath: m_LocalPosition.x

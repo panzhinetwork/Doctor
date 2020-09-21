@@ -14,6 +14,13 @@ public class UIVideo : UIAbstractView {
 
     private float _vol = 1.0f;
     private bool _mute = true;
+
+    protected override void Awake()
+    {
+        base.Awake();
+        _video.url = Application.streamingAssetsPath + "/1.mp4";
+    }
+
     public void OnPlayClicked()
     {
         _video.Play();
