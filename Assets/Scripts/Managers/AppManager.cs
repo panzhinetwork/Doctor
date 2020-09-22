@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UIFramework;
+using System.Runtime.InteropServices;
 
 public class AppManager : MonoBehaviour
 {
@@ -14,6 +15,14 @@ public class AppManager : MonoBehaviour
 
     private UIPack _uiPack;
     private UIState _currentState;
+
+    [SerializeField]
+    public string _key = "0";
+
+#if !UNITY_EDITOR
+    [DllImport("Auth64")]
+    public static extern int Permission(string key);
+#endif
 
     private void ChangeStage(UIState stage)
     {
@@ -35,6 +44,13 @@ public class AppManager : MonoBehaviour
 
     private void Awake()
     {
+ #if !UNITY_EDITOR
+        if (Permission(_key) == 0)
+        {
+            Application.Quit();
+            return;
+        }
+#endif
         Debug.Log("game start...");
         DontDestroyOnLoad(gameObject);
 

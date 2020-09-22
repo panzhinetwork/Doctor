@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7398529423372130843}
   - component: {fileID: 3119045094366339150}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: AppManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46,6 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _uiSettings: {fileID: 11400000, guid: 0d7ffd1bace38a94983954d832386519, type: 2}
   _playState: {fileID: 3119045094366339150}
+  _key: 145
 --- !u!114 &3119045094366339150
 MonoBehaviour:
   m_ObjectHideFlags: 0
